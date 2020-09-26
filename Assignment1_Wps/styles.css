@@ -1,0 +1,98 @@
+.header{
+    background-color: rgb(61, 75, 87);
+  
+    color: rgb(181, 245, 242);
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 12px;
+    padding-left: 10px;
+    font-size: xx-large;
+}
+
+body{
+    background-color:rgb(181, 245, 242); 
+
+    
+}
+table, th, td {
+    border: 2px solid rgb(61, 75, 87);
+    border-collapse: collapse;
+  }
+  th, td {
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    text-align: center;
+  }
+  td input{
+      height: 30px;
+      width: 30px;
+      font-weight: bolder;
+  }
+
+  input{
+    height: 30px;
+    font-weight: bolder;
+   
+}
+.last{
+    margin-left: 40%;
+
+}
+
+#form
+{
+    position: absolute;
+    display: none;
+    width: 30%;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    background-color: rgb(61, 75, 87);
+    transition: 2s;
+}
+
+#inform
+{
+   height: 50%;
+   margin-top: 40%;
+   margin-left: 5px;
+   margin-right: 5px;
+   padding-top: 50px;
+   background-color: rgb(181, 245, 242);
+   text-align: center;
+   border-radius: 10px;
+   
+
+}
+
+#closebutton
+{  
+
+
+   border: solid 2px black;
+    color: rgb(61, 75, 87);
+    background-color: rgb(181, 245, 242);
+     width: 100px; 
+     height: 100px;
+     font-size: large; 
+     text-align: center;
+     text-decoration: none;
+}  
+  
+#topbutton{
+
+
+
+ position:absolute;
+  right: 10px; 
+  text-decoration: none;
+  top: 10px;
+   background-color: rgb(181, 245, 242);
+   color: rgb(61, 75, 87);
+   font-size: larger;
+   font-weight: bold;
+}

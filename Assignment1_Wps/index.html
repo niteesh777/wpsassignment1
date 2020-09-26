@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Events</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="event managers">
+        <meta name="keywords" content="vce,events,student events">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"   href="styles.css">
+        <script src="script.js"></script>
+    </head>
+<body>
+    <div>
+       <h2 class="header"> Events </h2>
+       <a href="faculty.html" id="topbutton">Faculty</a>
+
+    </div>
+
+    <div>
+        <table style="width: 100%;" id="studentevent">
+            <tr>
+              <th>Event Name</th>
+              <th>Date</th> 
+              <th>Completed</th>
+              <th>Pending</th>
+              <th>Upcoming</th>
+              <th>High Priority</th>
+            </tr>
+            <tr>
+              <td>Wps Quiz-1</td>
+              <td>16-09-2020</td>
+              <td><input type="radio" name="flag" value="completed" id="flag"></td>
+              <td><input type="radio" name="flag" value="pending"id="flag"></td>
+              <td><input type="radio" name="flag" value="upcoming"id="flag"></td>
+              <td><input type="radio" name="flag" value="highprior"id="flag"></td>
+            </tr>
+
+            
+          </table>
+          <br>
+          <div>
+
+           
+            <input type="button" name="updatebutton" value="update" id="update" onclick="update()"class="last">
+            <input type="button" name="status" value="send Status" id="status" onclick="sendstatus()">
+             
+        
+           </div>
+        
+         
+          
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

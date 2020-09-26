@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Faculty page</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="event managers">
+        <meta name="keywords" content="vce,events,student events">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"   href="styles.css">
+        <script src="script.js"></script>
+    </head>
+<body>
+    <div>
+       <h2 class="header"> Events </h2>
+       <a href="index.html"  id="topbutton">Student</a>
+
+    </div>
+    <div id="form">
+      <a href="javascript:void(0)"   id="closebutton"   onclick='document.getElementById("form").style.display = "none"' >Close</a>
+      <div id="inform">
+      <input type="text" id="eventname" style="width: 80%;">
+      <br>
+      <span style="font-weight: bold; padding-top: 5px; padding-bottom: 5px;">Event name</span>
+      <br>
+      <input type="date" id="eventdate" style="width: 70%;">
+      <br>
+      <span>Event date</span>
+      <br>
+      <input type="button" id="submit" value="Submit" onclick="sub()" >
+
+    </div>
+
+
+    </div>
+    <div>
+        <table style="width:100%" id="eventtable">
+            <tr>
+              <th>Event Name</th>
+              <th>Date</th> 
+              <th>edit</th>
+              <th>Delete</th>
+            </tr>
+            <tr id="demo">
+              <td>Wps Quiz-1</td>
+              <td>16-09-2020</td>
+              <td><input type="button" name="Editbutton" value="Edit" style=" width:60px" id="Edit" onclick="edit()"></td>
+              <td><input type="button" name="DELbutton" value="Delete" style=" width:60px" onclick="del()"></td>
+            </tr>
+            
+          </table>
+          <br>
+     </div>
+
+
+   <div>
+
+    <input type="button" name="Createbutton" value="Create Event" class="last" onclick="create()">
+    <input type="button" name="Sharebutton" value="Share" id="Share" onclick="share()">
+    <input type="button" name="getbutton" value="getstatus" id="get" onclick="getstatus()">
+
+   </div>
+
+   <div style="margin-top: 50px;">
+
+    <table style="width:100%" id="statustable">
+      <tr>
+        <th colspan="3" style="text-align: center;"> DASH BOARD</th>
+      </tr>
+      
+
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
