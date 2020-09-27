@@ -28,7 +28,8 @@ function sub()
   <td>${event}</td>
   <td>${date}</td>
   <td><input type='button' name='Editbutton' value='Edit' style='width:60px' id='Edit' onclick='edit()'></td>
-  <td><input type='button' name='DELbutton' value='Delete' style='width:60px' onclick='((this.parentElement).parentElement).style.display="none";'></td>
+  <td><input type='button' name='DELbutton' value='Delete' style='width:60px' onclick='((this.parentElement).parentElement).style.display="none";arev.pop();
+  arda.pop();'></td>
   </tr>`; 
 
 
