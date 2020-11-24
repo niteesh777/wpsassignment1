@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Questio 3</title>
+<meta name="viewport" width="device-width" initial-scale="1" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<style>
+
+table, th, td {
+ 
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgb(245, 245, 153);
+}
+</style>
+</head>
+<body>
+<script>
+    axios.get('https://reqres.in/api/products/3')
+    .then(response => {
+
+        console.log("This is here")
+        
+        let d = response.data.data;
+        let s = response.data.support;
+        
+        var output='';
+        output +=`
+       
+ <table style="width:100%">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Year</th>
+    <th>Color</th>
+    <th>Pantone-Value</th>
+  </tr>
+  <tr>
+    <td>${d.id}</td>
+    <td>${d.name}</td>
+    <td>${d.year}</td>
+    <td>${d.color}</td>
+    <td>${d.pantone_value}</td>
+  </tr>
+  </table>
+         `;
+     $('#userdata').html(output);
+     var output1='';
+        output1 +=`
+       
+ <table style="width:100%">
+  <tr>
+    <th>Url</th>
+    <th>Text</th>
+  </tr>
+  <tr>
+    <td>${s.url}</td>
+    <td>${s.text}</td>
+  </tr>
+  </table>
+         `;
+     $('#support').html(output1);
+
+
+    })
+    .catch(error => {
+
+        console.log(error);
+    })
+
+
+</script>
+<h1> User Data</h1>
+<div id="userdata">
+
+
+</div>
+<h2>Support</h2>
+<div id="support">
+
+
+</div>
+
+
+</body>
+</html>
